@@ -1,86 +1,31 @@
-/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    color: #333;
 }
 
-/* Chart Container */
-#chart {
-    background-color: #ffffff;
+header {
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: fit-content;
+    text-align: center;
 }
 
-/* SVG Container */
-svg {
-    display: block;
-    margin: auto;
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-/* Bar Styles */
-rect {
-    fill: #3498db;
-    transition: all 0.3s ease;
-    rx: 6px; /* Rounded corners for bars */
+.chart {
+    flex: 1 1 45%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
 
-/* Hover Effect for Bars */
-rect:hover {
-    fill: #2980b9;
-    transform: scale(1.05);
-}
-
-/* Axis Text */
-.axis text {
-    font-size: 14px;
-    fill: #555555;
-    font-weight: 500;
-}
-
-/* Axis Lines */
-.axis path, .axis line {
-    fill: none;
-    stroke: #dddddd;
-    stroke-width: 2px;
-}
-
-/* Labels or Titles */
-.title {
-    font-size: 18px;
-    font-weight: 600;
-    text-anchor: middle;
-    fill: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.label {
-    font-size: 12px;
-    font-weight: 400;
-    fill: #7f8c8d;
-}
-
-/* Tooltip Styles */
-.tooltip {
-    position: absolute;
-    background-color: #333333;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 12px;
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-}
-
-.tooltip.show {
-    opacity: 1;
+#filters {
+    margin-bottom: 20px;
+    text-align: center;
 }

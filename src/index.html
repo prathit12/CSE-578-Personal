@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; style-src-elem 'self' https://fonts.googleapis.com;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stock Market Dashboard</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; style-src-elem 'self' https://fonts.googleapis.com;">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>Stock Market Dashboard</h1>
+        <div id="filters">
+            <!-- Add filters here -->
+        </div>
+    </header>
+
+    <main id="dashboard">
+        <div id="candlestick-chart" class="chart"></div>
+        <div id="area-chart" class="chart"></div>
+        <div id="scatter-plot" class="chart"></div>
+    </main>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
